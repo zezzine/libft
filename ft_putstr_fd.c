@@ -6,11 +6,12 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 10:24:19 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/11 18:27:54 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/13 15:28:47 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;

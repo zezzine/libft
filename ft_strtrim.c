@@ -6,7 +6,7 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 10:22:58 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/12 17:12:51 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/14 18:50:58 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(p, (char *)s1 + i, (last - i) + 2);
 	return (p);
 }
+/*
+#include<stdio.h>
+int main()
+{
+	char const s[] = "///zack///";
+	char const set[] = "/";
+	printf("%s", ft_strtrim(s, set));
+}*/

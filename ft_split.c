@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/13 15:28:57 by zezzine           #+#    #+#             */
+/*   Updated: 2021/11/13 23:08:23 by zezzine          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include"libft.h"
 
-int	wordlen(char const *s, char c)
+static int	wordlen(char const *s, char c)
 {
 	int	i;
 
@@ -14,7 +26,7 @@ int	wordlen(char const *s, char c)
 	return (i);
 }
 
-int	calculate_w(char const	*s, char c)
+static int	calculate_w(char const	*s, char c)
 {
 	int	count;
 	int	i;
@@ -39,6 +51,20 @@ int	calculate_w(char const	*s, char c)
 	return (count);
 }
 
+char	**ft_free(char	**z, int i)
+{
+	if (!z)
+		return (NULL);
+	i--;
+	while (i >= 0)
+	{
+		free(z[i]);
+		i--;
+	}
+	free(z);
+	return (NULL);
+}
+
 char	**ft_split(const char *s, char c)
 {
 	char		**z;
@@ -58,7 +84,7 @@ char	**ft_split(const char *s, char c)
 		wordl = wordlen(s, c);
 		z[i] = malloc((wordl + 1) * sizeof(char));
 		if (!z[i])
-			return (NULL);
+			return (ft_free(z, i));
 		ft_strlcpy(z[i], s, wordl + 1);
 		z[i][wordl] = '\0';
 		s += wordl;
@@ -68,6 +94,7 @@ char	**ft_split(const char *s, char c)
 	return (z);
 }
 /*
+#include<stdio.h>
 int	main()
 {
 	char const s[] = "//zack///is/here////";

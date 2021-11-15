@@ -6,12 +6,13 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 14:53:17 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/07 15:30:55 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/13 15:30:53 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-int	ft_isdigit(int	c)
+
+int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 		return (1);

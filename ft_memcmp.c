@@ -6,11 +6,12 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 10:23:51 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/09 16:45:54 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/13 15:28:19 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char		*s01;

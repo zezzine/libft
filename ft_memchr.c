@@ -6,11 +6,12 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 10:23:47 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/11 21:57:18 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/13 15:28:14 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char		*cs;

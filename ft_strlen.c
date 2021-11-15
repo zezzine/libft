@@ -6,11 +6,12 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 10:24:41 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/09 10:24:43 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/13 15:29:35 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;

@@ -6,12 +6,13 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 14:51:06 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/11 22:07:05 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/13 15:27:02 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-int	is_space(char c)
+
+static int	is_space(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\v'
 		|| c == '\n' || c == '\f' || c == '\r')

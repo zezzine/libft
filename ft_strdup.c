@@ -6,12 +6,13 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 10:24:30 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/09 10:24:31 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/13 15:29:13 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-char	*ft_strcpy(char *dst, char *src)
+
+static char	*ft_strcpy(char *dst, char *src)
 {
 	int	i;
 

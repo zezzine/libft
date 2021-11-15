@@ -6,11 +6,12 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 10:24:15 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/12 22:44:47 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/13 15:28:43 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	unsigned int	nb;

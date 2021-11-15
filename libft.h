@@ -6,7 +6,7 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 15:59:25 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/12 20:16:25 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/13 17:52:47 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,13 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h>
 # include <string.h>
-#define INT_MIN (-__INT_MAX__ -1)
 
-
-typedef	struct	s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }			t_list;
-
-typedef struct	s_split_next
-{
-	size_t start;
-	size_t length;
-}				t_split_next;
 
 int				ft_atoi(const char *str);
 
@@ -86,7 +77,7 @@ size_t			ft_strlen(const char *s);
 
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void			ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 

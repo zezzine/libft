@@ -6,11 +6,12 @@
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 10:24:33 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/11 22:01:25 by zezzine          ###   ########.fr       */
+/*   Updated: 2021/11/13 15:29:19 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char			*p;
