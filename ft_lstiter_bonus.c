@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/09 10:25:03 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/09 10:25:06 by zezzine          ###   ########.fr       */
+/*   Created: 2021/11/15 20:06:58 by zezzine           #+#    #+#             */
+/*   Updated: 2021/11/16 15:05:50 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int	ft_toupper(int c)
+
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (c >= 97 && c <= 122)
+	if (lst && f)
 	{
-		c = c - 32;
+		while (lst)
+		{
+			f(lst->content);
+			lst = lst->next;
+		}
 	}
-	return (c);
 }

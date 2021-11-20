@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zezzine <zezzine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/09 10:22:58 by zezzine           #+#    #+#             */
-/*   Updated: 2021/11/12 17:12:51 by zezzine          ###   ########.fr       */
+/*   Created: 2021/11/09 10:23:39 by zezzine           #+#    #+#             */
+/*   Updated: 2021/11/16 13:38:24 by zezzine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+t_list	*ft_lstlast(t_list *lst)
 {
-	int		i;
-	char	*p;
-	int		last;
+	t_list	*current;
 
-	i = 0;
-	if (s1 == NULL || set == NULL)
-		return (0);
-	last = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[i]) && i <= last)
-		i++;
-	while (ft_strchr(set, s1[last]) && i <= last)
-		last--;
-	p = (char *)malloc(sizeof(char) * (last - i + 2));
-	if (!p)
+	current = lst;
+	if (!current)
 		return (NULL);
-	ft_strlcpy(p, (char *)s1 + i, (last - i) + 2);
-	return (p);
+	while (current -> next)
+		current = current->next;
+	return (current);
 }
